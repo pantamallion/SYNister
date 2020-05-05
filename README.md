@@ -1,8 +1,9 @@
 ![SYNister Logo](/READMEphotos/SYNister.png)
 # SYNister: Labsheet Generator
-DEscription
+Description
 ## How to use
-GUI Photo
+![interface](/READMEphotos/interface.png)
+steps to use
 ### Inputs
 #### Inventory
 Inventory formatting
