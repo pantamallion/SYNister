@@ -12,10 +12,12 @@ Description
 Example inventory folder, input folders, and outputs can be seen in /src/SYNister/Example  
 ### Inputs
 #### Inventory
-Folder of TSV files
+explain
+![inv](/READMEphotos/inventory.png)  
+Example of a valid inventory can be seen in /src/SYNister/Example/inventory
 #### Construction Files
 The construction file folder (the "Input" field) should be a folder containing only the .txt construction files which will be used to construct a single set of lab sheets. For example:  
-![inputfolder](/READMEphotos/inputfolder.png)   
+![inputfolder1](/READMEphotos/inputfolder.png)   
    
 Each construction file should be formatted as a list of steps. Lines starting with ">" or "//" will be ignored (and thus can be used for comments). Any text below a broken line ("---") will be ignored, and thus can be used to specify oligos for human reference.  
 The following steps are supported with the given formats (replace bolded sections with specific items):  
@@ -29,15 +31,17 @@ The following steps are supported with the given formats (replace bolded section
  * digest *oligo* with *enzyme1*/*enzyme2*/*...*	(*product*)
  * ligate *digest*							(*product*)
  * transform *plasmid*						(*strain*, *antibiotic*)
- * pca *oligo1*,*oligo2*,*...* 					(*product*)  
- Note: "acquire," "cleanup," and "gel" steps do not need to be specified and will be added where needed. If they are specified, they will be ignored.
+ * pca *oligo1*,*oligo2*,*...* 					(*product*)    
+Note: "acquire," "cleanup," and "gel" steps do not need to be specified and will be added where needed. If they are specified, they will be ignored.    
    
- For example: 
- ![input](/READMEphotos/input.png)  
+For example:   
+![input1](/READMEphotos/input.png)  
  
     
- More examples of valid folder and constrcution files can be seen in /src/SYNister/Example/ConstructionFiles  
+More examples of valid input folders and constrcution files can be seen in /src/SYNister/Example/ConstructionFiles  
 ### Outputs
+explain
+More examples of outputs can be seen in /src/SYNister/Example/Output
 ## Troubleshooting
 Error messages displayed under button  
 ![error](/READMEphotos/interface_error.png)  
