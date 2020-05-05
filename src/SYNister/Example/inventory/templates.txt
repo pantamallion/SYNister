@@ -1,0 +1,27 @@
+>name	templates								
+>description	140L template plasmids								
+>location	minifreezer								
+>plate_type	cardboard_box								
+>temperature	-20								
+									
+>>composition	A	B	C	D	E	F	G	H	I
+1	pTargetF	pAPAP1	p20N5	p20N189-A	p20N190	pMCL200Y	pJBAG-O	Citrobacter	V. fischeri
+2	T4 gen	P1 gen	pim3	pTarg1-A					
+3									
+4									
+5									
+6									
+7									
+8									
+9									
+									
+>>note	A	B	C	D	E	F	G	H	I
+1	diluted 25x	diluted 25x	diluted 25x	diluted 25x	diluted 25x	"diluted 10x, contains pimer1"	"diluted 10x, contains pimer1"		
+2			diluted 25x	diluted 25x					
+3									
+4									
+5									
+6									
+7									
+8									
+9									

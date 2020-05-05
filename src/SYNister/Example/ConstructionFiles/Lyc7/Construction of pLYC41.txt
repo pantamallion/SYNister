@@ -1,0 +1,12 @@
+PCR SK20,SK21 on pLYC33K	(4974, back1)
+PCR SK22,SK23 on pLYC33K	(4983, back2)
+PCR ispG-for,ispG-rev on MG1655_ispG	(1151, part)
+Assemble back1,back2,part	(BsaI, pLYC41)
+Transform pLYC41	(Mach1, Amp)
+---------------------------------------------------
+SK20	agtcaGGTCTCataatgattatcaaaaaggatcttc
+SK21	agtcaGGTCTCacgtacctgccgacctacaggcgac
+SK22	agtcaGGTCTCatacgcttgggaagctgtggtatgg
+SK23	tggtgGGTCTCtcgagtcatgaccaaaatcccttaa
+ispG-for	atgctGGTCTCactcgatgcataaccaggctccaat
+ispG-rev	agtcaGGTCTCcattattatttttcaacctgctgaa

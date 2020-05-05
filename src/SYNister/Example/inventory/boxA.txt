@@ -1,0 +1,38 @@
+>name	boxA								
+>description	140L thread A intermediate storage								
+>location	minifridge								
+>plate_type	cardboard_box								
+>temperature	4								
+									
+>>label	A	B	C	D	E	F	G	H	I
+1	A1p	A1d	A1A	A1B	cscB1				
+2	A2p	A2d	A2A	A2B	cscB2				
+3	A3p	A3d	A3A	A3B	cscB3				
+4									
+5	Ab1	Ab1d	Ab1A	Ab1B					
+6	Ab2	Ab2d	Ab2A	Ab2B					
+7	Ab3	Ab3d	Ab3A	Ab3B					
+8									
+9									
+									
+>>composition	A	B	C	D	E	F	G	H	I
+1	pcr	dig	pTarget-cscB1-A	pTarget-cscB1-B					
+2	pcr	dig	pTarget-cscB2-A	pTarget-cscB2-B					
+3	pcr	dig	pTarget-cscB3-A	pTarget-cscB3-B					
+4									
+5			pTarg1-cscB1-A	pTarg1-cscB1-B					
+6			pTarg1-cscB2-A	pTarg1-cscB2-B					
+7			pTarg1-cscB3-A	pTarg1-cscB3-B					
+8									
+9									
+									
+>>concentration	A	B	C	D	E	F	G	H	I
+1					10 uM				
+2					10 uM				
+3					10 uM				
+4									
+5									
+6									
+7									
+8									
+9									

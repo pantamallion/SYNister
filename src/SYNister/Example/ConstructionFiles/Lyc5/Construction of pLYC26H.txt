@@ -1,0 +1,4 @@
+PCR G00101,TP2H on p20N88    (f2H)
+PCR PF2a,BR2a on pLYC25    (back1-2)PCR BF2a,PR2a on pLYC25    (back2-2)
+Assemble f2H,back1-2,back2-2        (BsaI, pLYC26H)	
+Transform pLYC26H (Mach1, Amp)

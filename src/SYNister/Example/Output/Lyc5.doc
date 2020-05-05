@@ -1,0 +1,163 @@
+LABSHEETS FOR EXPERIMENT: Lyc5Step 1 of 2: Lyc5 Golden Gate Assembly
+
+[VERIFY] Master Mix:
+42.0 uL ddH2O
+7.0 10x T4 DNA Ligase Buffer
+3.5 uL BsaI
+
+Recipe [TOTAL = 10uL]:
+6.5 uL Master Mix
+1 uL each remaining DNA
+0.5 uL T4 DNA ligase
+
+samples:
+label     dna                        enzyme    product   
+          f2H, back1-2, back2-2      BsaI      pLYC26H   
+          f2L, back1-2, back2-2      BsaI      pLYC26L   
+          f2M, back1-2, back2-2      BsaI      pLYC26M   
+          f2O, back1-2, back2-2      BsaI      pLYC26O   
+          f2S, back1-2, back2-2      BsaI      pLYC26S   
+          f2U, back1-2, back2-2      BsaI      pLYC26U   
+          f6H, back1-3, back2-3      BsaI      pLYC27H   
+          f6L, back1-3, back2-3      BsaI      pLYC27L   
+          f6M, back1-3, back2-3      BsaI      pLYC27M   
+          f6O, back1-3, back2-3      BsaI      pLYC27O   
+          f6S, back1-3, back2-3      BsaI      pLYC27S   
+          f6U, back1-3, back2-3      BsaI      pLYC27U   
+          f3H, back1-4, back2-4      BsaI      pLYC28H   
+          f3L, back1-4, back2-4      BsaI      pLYC28L   
+          f3M, back1-4, back2-4      BsaI      pLYC28M   
+          f3O, back1-4, back2-4      BsaI      pLYC28O   
+          f3S, back1-4, back2-4      BsaI      pLYC28S   
+          f3U, back1-4, back2-4      BsaI      pLYC28U   
+          f5H, back1-5, back2-5      BsaI      pLYC29H   
+          f5L, back1-5, back2-5      BsaI      pLYC29L   
+          f5M, back1-5, back2-5      BsaI      pLYC29M   
+          f5O, back1-5, back2-5      BsaI      pLYC29O   
+          f5S, back1-5, back2-5      BsaI      pLYC29S   
+          f5U, back1-5, back2-5      BsaI      pLYC29U   
+          f14H, back1-6, back2-6     BsaI      pLYC30H   
+          f14L, back1-6, back2-6     BsaI      pLYC30L   
+          f14M, back1-6, back2-6     BsaI      pLYC30M   
+          f14O, back1-6, back2-6     BsaI      pLYC30O   
+          f14S, back1-6, back2-6     BsaI      pLYC30S   
+          f14U, back1-6, back2-6     BsaI      pLYC30U   
+
+source:
+label            concentration    location         
+f2U              zymo             TPcon4_zymos/A2  
+f6U              zymo             TPcon4_zymos/A3  
+f3U              zymo             TPcon4_zymos/A4  
+f5U              zymo             TPcon4_zymos/A5  
+f14U             zymo             TPcon4_zymos/A6  
+f2H              zymo             TPcon4_zymos/B2  
+f6H              zymo             TPcon4_zymos/B3  
+f3H              zymo             TPcon4_zymos/B4  
+f5H              zymo             TPcon4_zymos/B5  
+f14H             zymo             TPcon4_zymos/B6  
+f2L              zymo             TPcon4_zymos/C2  
+f6L              zymo             TPcon4_zymos/C3  
+f3L              zymo             TPcon4_zymos/C4  
+f5L              zymo             TPcon4_zymos/C5  
+f14L             zymo             TPcon4_zymos/C6  
+f2S              zymo             TPcon4_zymos/D2  
+f6S              zymo             TPcon4_zymos/D3  
+f3S              zymo             TPcon4_zymos/D4  
+f5S              zymo             TPcon4_zymos/D5  
+f14S             zymo             TPcon4_zymos/D6  
+f2O              zymo             TPcon4_zymos/E2  
+f6O              zymo             TPcon4_zymos/E3  
+f3O              zymo             TPcon4_zymos/E4  
+f5O              zymo             TPcon4_zymos/E5  
+f14O             zymo             TPcon4_zymos/E6  
+f2M              zymo             TPcon4_zymos/F2  
+f6M              zymo             TPcon4_zymos/F3  
+f3M              zymo             TPcon4_zymos/F4  
+f5M              zymo             TPcon4_zymos/F5  
+f14M             zymo             TPcon4_zymos/F6  
+back1-2          zymo             TPcon4_zymos/G2  
+back1-3          zymo             TPcon4_zymos/G3  
+back1-4          zymo             TPcon4_zymos/G4  
+back1-5          zymo             TPcon4_zymos/G5  
+back1-6          zymo             TPcon4_zymos/G6  
+back2-2          zymo             TPcon4_zymos/H2  
+back2-3          zymo             TPcon4_zymos/H3  
+back2-4          zymo             TPcon4_zymos/H4  
+back2-5          zymo             TPcon4_zymos/H5  
+back2-6          zymo             TPcon4_zymos/H6  
+
+destination: thermocycler__
+program: main/GG1
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 2 of 2: Lyc5 Transform
+
+samples:
+label          strain         antibiotic     product        incubate       
+               Mach1          Amp            pLYC26H                       
+               Mach1          Amp            pLYC26L                       
+               Mach1          Amp            pLYC26M                       
+               Mach1          Amp            pLYC26O                       
+               Mach1          Amp            pLYC26S                       
+               Mach1          Amp            pLYC26U                       
+               Mach1          Amp            pLYC27H                       
+               Mach1          Amp            pLYC27L                       
+               Mach1          Amp            pLYC27M                       
+               Mach1          Amp            pLYC27O                       
+               Mach1          Amp            pLYC27S                       
+               Mach1          Amp            pLYC27U                       
+               Mach1          Amp            pLYC28H                       
+               Mach1          Amp            pLYC28L                       
+               Mach1          Amp            pLYC28M                       
+               Mach1          Amp            pLYC28O                       
+               Mach1          Amp            pLYC28S                       
+               Mach1          Amp            pLYC28U                       
+               Mach1          Amp            pLYC29H                       
+               Mach1          Amp            pLYC29L                       
+               Mach1          Amp            pLYC29M                       
+               Mach1          Amp            pLYC29O                       
+               Mach1          Amp            pLYC29S                       
+               Mach1          Amp            pLYC29U                       
+               Mach1          Amp            pLYC30H                       
+               Mach1          Amp            pLYC30L                       
+               Mach1          Amp            pLYC30M                       
+               Mach1          Amp            pLYC30O                       
+               Mach1          Amp            pLYC30S                       
+               Mach1          Amp            pLYC30U                       
+
+source:
+label            concentration    location         
+pLYC30O                           thermocylcer__   
+pLYC26U                           thermocylcer__   
+pLYC30M                           thermocylcer__   
+pLYC26S                           thermocylcer__   
+pLYC28U                           thermocylcer__   
+pLYC30L                           thermocylcer__   
+pLYC28S                           thermocylcer__   
+pLYC26O                           thermocylcer__   
+pLYC30H                           thermocylcer__   
+pLYC26M                           thermocylcer__   
+pLYC28O                           thermocylcer__   
+pLYC26L                           thermocylcer__   
+pLYC28M                           thermocylcer__   
+pLYC28L                           thermocylcer__   
+pLYC29L                           thermocylcer__   
+pLYC27H                           thermocylcer__   
+pLYC29H                           thermocylcer__   
+pLYC30U                           thermocylcer__   
+pLYC30S                           thermocylcer__   
+pLYC27U                           thermocylcer__   
+pLYC27S                           thermocylcer__   
+pLYC29U                           thermocylcer__   
+pLYC29S                           thermocylcer__   
+pLYC27O                           thermocylcer__   
+pLYC27M                           thermocylcer__   
+pLYC29O                           thermocylcer__   
+pLYC27L                           thermocylcer__   
+pLYC29M                           thermocylcer__   
+pLYC26H                           thermocylcer__   
+pLYC28H                           thermocylcer__   
+
+rescue_required?: no
+END OF LAB SHEETS FOR EXPERIMENT Lyc5

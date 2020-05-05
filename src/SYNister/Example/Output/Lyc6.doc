@@ -1,0 +1,197 @@
+LABSHEETS FOR EXPERIMENT: Lyc6Step 1 of 11: Lyc6 PCR
+
+protocol: Phusion
+
+samples:
+label          primer1        primer2        template       product        
+               kpMB1-F        kpMB1-R        p20N87         frag1          
+               k189-F         k189-R         p20N189-A      frag3          
+
+source:
+label            concentration    location         
+kpMB1-F          100uM            Box_Lyc6/E1      
+k189-F           100uM            Box_Lyc6/G1      
+k189-R           100uM            Box_Lyc6/G2      
+p20N87           miniprep         TPcon4_mini/A2   
+kpMB1-R                           benchtop, lyophilized stock [VERIFY]
+p20N189-A                         templates/A4     
+
+destination: thermocycler__
+program: 55
+
+destinations:
+label               concentration       location            
+10uM kpMB1-R        10uM                                    
+kpMB1-R             100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 2 of 11: Lyc6 PCR
+
+protocol: Phusion
+
+samples:
+label          primer1        primer2        template       product        
+               kback1-F       kback1-R       pLYC25         back1          
+               k322-F         k322-R         pBR322         frag2          
+
+source:
+label            concentration    location         
+k322-F           100uM            Box_Lyc6/F1      
+k322-R           100uM            Box_Lyc6/F2      
+kback1-F         100uM            LYC_back1/E9     
+kback1-R         100uM            LYC_back1/F9     
+pLYC25                            benchtop, lyophilized stock [VERIFY]
+pBR322                            benchtop, lyophilized stock [VERIFY]
+
+destination: thermocycler__
+program: main/phu1
+
+destinations:
+label               concentration       location            
+10uM pLYC25         10uM                                    
+10uM pBR322         10uM                                    
+pLYC25              100uM                                   
+pBR322              100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 3 of 11: Lyc6 PCR
+
+protocol: Q5
+
+samples:
+label          primer1        primer2        template       product        
+               kback2-F       kback2-R       pLYC25         back2          
+
+source:
+label            concentration    location         
+kback2-F         100uM            LYC_back1/G9     
+kback2-R         100uM            LYC_back1/H9     
+pLYC25                            benchtop, lyophilized stock [VERIFY]
+
+destination: thermocycler__
+program: Q5-8K
+
+destinations:
+label               concentration       location            
+10uM pLYC25         10uM                                    
+pLYC25              100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 4 of 11: Lyc6 Gel
+
+samples:
+reaction       size           product        
+               471            frag1          
+               1266           frag3          
+
+source:
+thermocycler__   
+Step 5 of 11: Lyc6 Gel
+
+samples:
+reaction       size           product        
+               3867           back1          
+               1507           frag2          
+
+source:
+thermocycler__   
+Step 6 of 11: Lyc6 Gel
+
+samples:
+reaction       size           product        
+               4843           back2          
+
+source:
+thermocycler__   
+Step 7 of 11: Lyc6 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               frag1          50 uL                         frag1          
+               frag3          50 uL                         frag3          
+
+source:
+thermocycler__   
+Step 8 of 11: Lyc6 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               back1          50 uL                         back1          
+               frag2          50 uL                         frag2          
+
+source:
+                 
+Step 9 of 11: Lyc6 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               back2          50 uL                         back2          
+
+source:
+                 
+Step 10 of 11: Lyc6 Golden Gate Assembly
+
+[VERIFY] Master Mix:
+24.0 uL ddH2O
+4.0 10x T4 DNA Ligase Buffer
+2.0 uL BsaI
+
+Recipe [TOTAL = 10uL]:
+6.5 uL Master Mix
+1 uL each remaining DNA
+0.5 uL T4 DNA ligase
+
+samples:
+label     dna                        enzyme    product   
+          Eback1, Eback2, Eori0      BsaI      pLYC31E   
+          Kback1, Kback2, frag1      BsaI      pLYC31K   
+          Eback1, Eback2, Eori1      BsaI      pLYC32E   
+          back1, back2, frag2        BsaI      pLYC32K   
+          Eback1, Eback2, Eori2      BsaI      pLYC33E   
+          back1, back2, frag3        BsaI      pLYC33K   
+
+source:
+label            concentration    location         
+frag2                                              
+frag3                                              
+back1                                              
+back2                                              
+frag1                                              
+Eback1           zymo             Box_Lyc6/A5      
+Kback1           zymo             Box_Lyc6/A6      
+Eback2           zymo             Box_Lyc6/B5      
+Kback2           zymo             Box_Lyc6/B6      
+Eori0            zymo             Box_Lyc6/C5      
+Eori1            zymo             Box_Lyc6/D5      
+Eori2            zymo             Box_Lyc6/E5      
+
+destination: thermocycler__
+program: main/GG1
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 11 of 11: Lyc6 Transform
+
+samples:
+label          strain         antibiotic     product        incubate       
+               Mach1          Amp            pLYC31E                       
+               Mach1          Amp            pLYC31K                       
+               Mach1          Amp            pLYC32E                       
+               Mach1          Amp            pLYC32K                       
+               Mach1          Amp            pLYC33E                       
+               Mach1          Amp            pLYC33K                       
+
+source:
+label            concentration    location         
+pLYC33E                           thermocylcer__   
+pLYC31K                           thermocylcer__   
+pLYC32K                           thermocylcer__   
+pLYC33K                           thermocylcer__   
+pLYC31E                           thermocylcer__   
+pLYC32E                           thermocylcer__   
+
+rescue_required?: no
+END OF LAB SHEETS FOR EXPERIMENT Lyc6

@@ -1,0 +1,65 @@
+>name	strains1								
+>description	140L  cell glycerol stocks								
+>location	minus80								
+>plate_type	cardboard_box								
+>temperature	-80								
+									
+>>composition	1	2	3	4	5	6	7	8	9
+A	pTargetF	pCas	pCas	pCas	jtk3060_pBjk3066A	JTK176			
+B									
+C									
+D									
+E									
+F									
+G									
+H									
+I									
+J									
+									
+>>clone	1	2	3	4	5	6	7	8	9
+A			A	B					
+B									
+C									
+D									
+E									
+F									
+G									
+H									
+I									
+J									
+									
+>>host	1	2	3	4	5	6	7	8	9
+A	unknown	unknown	Mach1	Mach1	Mach1	JTK176			
+B									
+C									
+D									
+E									
+F									
+G									
+H									
+I									
+J									
+									
+>>antibiotic	1	2	3	4	5	6	7	8	9
+A	Spec	Kan	Kan	Kan					
+B									
+C									
+D									
+E									
+F									
+G									
+H									
+I									
+J									
+									
+>>note	1	2	3	4	5	6	7	8	9
+A	Direct growth from addgene stab	Outgrowth from scrape of plate from stab							
+B									
+C									
+D									
+E									
+F									
+G									
+H									
+I									
+J									

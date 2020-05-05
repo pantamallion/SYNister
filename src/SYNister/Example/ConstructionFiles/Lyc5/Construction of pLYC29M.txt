@@ -1,0 +1,4 @@
+PCR G00101,TP5M on p20N34    (f5M)
+PCR PF5a,BR5a on pLYC25    (back1-5)PCR BF5a,PR5a on pLYC25    (back2-5)
+Assemble f5M,back1-5,back2-5        (BsaI, pLYC29M)
+Transform pLYC29M (Mach1, Amp)

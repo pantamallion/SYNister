@@ -1,0 +1,4 @@
+PCR G00101,TP14L on p20N106    (f14L)
+PCR PF6a,BR6a on pLYC25    (back1-6)PCR BF6a,PR6a on pLYC25    (back2-6)
+Assemble f14L,back1-6,back2-6        (BsaI, pLYC30L)
+Transform pLYC30L (Mach1, Amp)

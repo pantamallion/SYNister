@@ -1,0 +1,38 @@
+>name	boxR								
+>description	Donner thread R intermediate storage								
+>location	freezer								
+>plate_type	cardboard_box								
+>temperature	4								
+									
+>>label	A	B	C	D	E	F	G	H	I
+1	pAtipiTrc	R3B	R5A	R1A				sLYC1	sLYC2
+2		pLYC10 (R3B)	R5B	R1B				sLYC1	sLYC2
+3			pLYC18 (R5A)	R6A				sLYC1	
+4				R6B					
+5									
+6									
+7									
+8									
+9									
+									
+>>composition	A	B	C	D	E	F	G	H	I
+1	pAtipiTrc	pLYC10 (sequenced)	pLYC18 (sequenced)	pLYC20				sLYC1	sLYC2
+2		pLYC10 (sequenced)	pLYC18	pLYC20				sLYC1	sLYC2
+3			pLYC18 (sequenced)	pLYC25				sLYC1	
+4				pLYC25					
+5									
+6									
+7									
+8									
+9									
+									
+>>concentration	A	B	C	D	E	F	G	H	I
+1	20x dil.	mini prep	mini prep	mini prep				100 uM	100 uM
+2		20x dil.	mini prep	mini prep				10 uM	10 uM
+3			20x dil.	mini prep				2.66 uM	
+4				mini prep					
+5									
+6									
+7									
+8									
+9									

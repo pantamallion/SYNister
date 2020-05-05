@@ -1,0 +1,12 @@
+pcr PS-F,PS-R on Pseu-Aur-gen. (1004 bp, PA-frag) 
+pcr pLYC-A-F,pLYC-A-R on pLYC33K (4507 bp, fragB) 
+pcr pLYC-B-F,pLYC-B-R on pLYC33K (4492 bp, fragC) 
+assemble PA-frag,fragB,fragC (BsaI, pLYC49B) 
+transform pLYC49B (Mach1, Amp)
+---------------------------------------------------
+PS-F	agtcaGGTCTCaGATAgagctcagcgaagcg	Forward BsaI for ggps gene in Pseudomonas aeruginosa
+PS-R	tggtgGGTCTCaAAGCagggagcccctacctttgcc	Reverse BsaI for ggps gene in Pseudomonas aeruginosa
+pLYC-A-F	atgctGGTCTCcGCTGaagatgtaccagtcgatgag	Forward BsaI for pLYC33 template-near ggpps
+pLYC-A-R	atgctGGTCTCaGCTTagtatcagttaaccgtagac	Reverse BsaI for pLYC33 template-splitter
+pLYC-B-F	agctaGGTCTCtGATAccgcccttttgggttcaagcag	Forward BsaI for pLYC33 template-splitter
+pLYC-B-R	agctaGGTCTCcCAGCtacaataccaagctcatcgagaa	Reverse BsaI for pLYC33 template-near ggpps

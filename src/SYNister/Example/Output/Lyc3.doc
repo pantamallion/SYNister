@@ -1,0 +1,264 @@
+LABSHEETS FOR EXPERIMENT: Lyc3Step 1 of 11: Lyc3 PCR
+
+protocol: Phusion
+
+samples:
+label          primer1        primer2        template       product        
+               ZH14           ZH13R          MG1655_ispDF   pcrC15         
+               ZH16           ZH15R          MG1655_ispG    pcrC16         
+               ZH21           ZH19R          MG1655_ispDF   pcrC18         
+               ZH23           ZH22R          MG1655_ispG    pcrC19         
+
+source:
+label            concentration    location         
+MG1655_ispDF                      benchtop, lyophilized stock [VERIFY]
+MG1655_ispG                       benchtop, lyophilized stock [VERIFY]
+ZH19R            100 uM           oligo-1/B5       
+ZH15R            100 uM           oligo-1/C4       
+ZH16             100 uM           oligo-1/D4       
+ZH21             100 uM           oligo-1/E5       
+ZH13R            100 uM           oligo-1/H3       
+ZH22R            100 uM           oligo-1/H5       
+ZH14             100 uM           oligo-1/I3       
+ZH23             100 uM           oligo-1/I5       
+
+destination: thermocycler__
+program: 55
+
+destinations:
+label               concentration       location            
+10uM MG1655_ispDF   10uM                                    
+10uM MG1655_ispG    10uM                                    
+MG1655_ispDF        100uM                                   
+MG1655_ispG         100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 2 of 11: Lyc3 PCR
+
+protocol: Phusion
+
+samples:
+label          primer1        primer2        template       product        
+               ZH11           ZH5R           pLYC10         pcrA14         
+               ZH12           ZH11R          MG1655_dxs     pcrC14         
+               ZH2            ZH14R          pLYC10         pcrB15         
+               ZH2            ZH16R          pLYC10         pcrB16         
+               ZH17           ZH2R           pLYC10         pcrA17         
+               ZH18           ZH17R          MG1655_dxs     pcrC17         
+               ZH20           ZH21R          pLYC10         pcrB18         
+               ZH20           ZH23R          pLYC10         pcrB19         
+
+source:
+label            concentration    location         
+pLYC10                            benchtop, lyophilized stock [VERIFY]
+MG1655_dxs                        benchtop, lyophilized stock [VERIFY]
+ZH5R             100 uM           oligo-1/A2       
+ZH14R            100 uM           oligo-1/A4       
+ZH23R            100 uM           oligo-1/A6       
+ZH2              100 uM           oligo-1/C1       
+ZH11             100 uM           oligo-1/C3       
+ZH20             100 uM           oligo-1/C5       
+ZH2R             100 uM           oligo-1/D1       
+ZH11R            100 uM           oligo-1/D3       
+ZH12             100 uM           oligo-1/E3       
+ZH16R            100 uM           oligo-1/E4       
+ZH17             100 uM           oligo-1/F4       
+ZH21R            100 uM           oligo-1/F5       
+ZH17R            100 uM           oligo-1/G4       
+ZH18             100 uM           oligo-1/H4       
+
+destination: thermocycler__
+program: main/phu1
+
+destinations:
+label               concentration       location            
+10uM pLYC10         10uM                                    
+10uM MG1655_dxs     10uM                                    
+pLYC10              100uM                                   
+MG1655_dxs          100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 3 of 11: Lyc3 PCR
+
+protocol: Q5
+
+samples:
+label          primer1        primer2        template       product        
+               ZH5            ZH12R          pLYC10         pcrB14         
+               ZH13           ZH2R           pLYC10         pcrA15         
+               ZH15           ZH2R           pLYC10         pcrA16         
+               ZH2            ZH18R          pLYC10         pcrB17         
+               ZH19           ZH20R          pLYC10         pcrA18         
+               ZH22           ZH20R          pLYC10         pcrA19         
+
+source:
+label            concentration    location         
+pLYC10                            benchtop, lyophilized stock [VERIFY]
+ZH19             100 uM           oligo-1/A5       
+ZH15             100 uM           oligo-1/B4       
+ZH2              100 uM           oligo-1/C1       
+ZH2R             100 uM           oligo-1/D1       
+ZH20R            100 uM           oligo-1/D5       
+ZH12R            100 uM           oligo-1/F3       
+ZH13             100 uM           oligo-1/G3       
+ZH22             100 uM           oligo-1/G5       
+ZH5              100 uM           oligo-1/I1       
+ZH18R            100 uM           oligo-1/I4       
+
+destination: thermocycler__
+program: Q5-8K
+
+destinations:
+label               concentration       location            
+10uM pLYC10         10uM                                    
+pLYC10              100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 4 of 11: Lyc3 Gel
+
+samples:
+reaction       size           product        
+               1271           pcrC15         
+               1195           pcrC16         
+               1271           pcrC18         
+               1195           pcrC19         
+
+source:
+thermocycler__   
+Step 5 of 11: Lyc3 Gel
+
+samples:
+reaction       size           product        
+               3372           pcrA14         
+               1941           pcrC14         
+               3929           pcrB15         
+               3949           pcrB16         
+               3476           pcrA17         
+               1941           pcrC17         
+               3576           pcrB18         
+               3596           pcrB19         
+
+source:
+thermocycler__   
+Step 6 of 11: Lyc3 Gel
+
+samples:
+reaction       size           product        
+               4953           pcrB14         
+               4396           pcrA15         
+               4376           pcrA16         
+               4849           pcrB17         
+               4749           pcrA18         
+               4729           pcrA19         
+
+source:
+thermocycler__   
+Step 7 of 11: Lyc3 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               pcrC15         50 uL                         pcrC15         
+               pcrC16         50 uL                         pcrC16         
+               pcrC18         50 uL                         pcrC18         
+               pcrC19         50 uL                         pcrC19         
+
+source:
+thermocycler__   
+Step 8 of 11: Lyc3 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               pcrA14         50 uL                         pcrA14         
+               pcrC14         50 uL                         pcrC14         
+               pcrB15         50 uL                         pcrB15         
+               pcrB16         50 uL                         pcrB16         
+               pcrA17         50 uL                         pcrA17         
+               pcrC17         50 uL                         pcrC17         
+               pcrB18         50 uL                         pcrB18         
+               pcrB19         50 uL                         pcrB19         
+
+source:
+                 
+Step 9 of 11: Lyc3 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               pcrB14         50 uL                         pcrB14         
+               pcrA15         50 uL                         pcrA15         
+               pcrA16         50 uL                         pcrA16         
+               pcrB17         50 uL                         pcrB17         
+               pcrA18         50 uL                         pcrA18         
+               pcrA19         50 uL                         pcrA19         
+
+source:
+                 
+Step 10 of 11: Lyc3 Gibson Assembly
+
+DNA Mix:
+5 uL of each oligo
+
+Reaction Mix:
+4 uL ddH2O
+1 uL DNA Mix
+5 uL 2X Gibson Mix
+
+samples:
+label     dna                        enzyme    product   
+          pcrA14, pcrB14, pcrC14     gibson    pLYC14    
+          pcrA15, pcrB15, pcrC15     gibson    pLYC15    
+          pcrA16, pcrB16, pcrC16     gibson    pLYC16    
+          pcrA17, pcrB17, pcrC17     gibson    pLYC17    
+          pcrA18, pcrB18, pcrC18     gibson    pLYC18    
+          pcrA19, pcrB19, pcrC19     gibson    pLYC19    
+
+source:
+label            concentration    location         
+pcrB14                                             
+pcrA15                                             
+pcrC14                                             
+pcrB15                                             
+pcrA16                                             
+pcrA14                                             
+pcrC19                                             
+pcrC17                                             
+pcrB18                                             
+pcrA19                                             
+pcrC18                                             
+pcrB19                                             
+pcrC15                                             
+pcrB16                                             
+pcrA17                                             
+pcrC16                                             
+pcrB17                                             
+pcrA18                                             
+
+destination: thermocycler__
+program: main/GIB2
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 11 of 11: Lyc3 Transform
+
+samples:
+label          strain         antibiotic     product        incubate       
+               Mach1          Amp            pLYC14                        
+               Mach1          Amp            pLYC15                        
+               Mach1          Amp            pLYC16                        
+               Mach1          Amp            pLYC17                        
+               Mach1          Amp            pLYC18                        
+               Mach1          Amp            pLYC19                        
+
+source:
+label            concentration    location         
+pLYC19                            thermocylcer__   
+pLYC18                            thermocylcer__   
+pLYC17                            thermocylcer__   
+pLYC16                            thermocylcer__   
+pLYC15                            thermocylcer__   
+pLYC14                            thermocylcer__   
+
+rescue_required?: no
+END OF LAB SHEETS FOR EXPERIMENT Lyc3

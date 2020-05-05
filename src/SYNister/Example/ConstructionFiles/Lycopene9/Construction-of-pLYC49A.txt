@@ -1,0 +1,12 @@
+pcr BC-F,BC-R on Bac-Cer-gen. (1006 bp, BC-frag) 
+pcr pLYC-A-F,pLYC-A-R on pLYC33K (4507 bp, fragB) 
+pcr pLYC-B-F,pLYC-B-R on pLYC33K (4492 bp, fragC) 
+assemble BC-frag,fragB,fragC (BsaI, pLYC49A) 
+transform pLYC49A (Mach1, Amp)
+---------------------------------------------------
+BC-F	agtcaGGTCTCaGATAaagatggagagcttgaa	Forward BsaI for ggps gene in Bacillus cereus
+BC-R	tggtgGGTCTCaAAGCaatgatgaatgactcaac	Reverse BsaI for ggps gene in Bacillus cereus
+pLYC-A-F	atgctGGTCTCcGCTGaagatgtaccagtcgatgag	Forward BsaI for pLYC33 template-near ggpps
+pLYC-A-R	atgctGGTCTCaGCTTagtatcagttaaccgtagac	Reverse BsaI for pLYC33 template-splitter
+pLYC-B-F	agctaGGTCTCtGATAccgcccttttgggttcaagcag	Forward BsaI for pLYC33 template-splitter
+pLYC-B-R	agctaGGTCTCcCAGCtacaataccaagctcatcgagaa	Reverse BsaI for pLYC33 template-near ggpps

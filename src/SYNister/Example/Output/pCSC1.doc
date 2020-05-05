@@ -1,0 +1,50 @@
+LABSHEETS FOR EXPERIMENT: pCSC1Step 1 of 2: pCSC1 Golden Gate Assembly
+
+[VERIFY] Master Mix:
+18.0 uL ddH2O
+3.0 10x T4 DNA Ligase Buffer
+1.5 uL BsmBI
+
+Recipe [TOTAL = 10uL]:
+6.5 uL Master Mix
+1 uL each remaining DNA
+0.5 uL T4 DNA ligase
+
+samples:
+label     dna                        enzyme    product   
+          amil, PcscA                BsmBI     pCSC1     
+          amil, PcscK                BsmBI     pCSC2     
+          fcsc3                      BsmBI     pCSC3     
+          fcsc4                      BsmBI     pCSC4     
+
+source:
+label            concentration    location         
+PcscA            zymo             box_Pcsc1/A3     
+PcscK            zymo             box_Pcsc1/B3     
+fcsc3            zymo             box_Pcsc1/C3     
+fcsc4            zymo             box_Pcsc1/D3     
+amil             zymo             box_Pcsc1/E3     
+
+destination: thermocycler__
+program: main/GG1
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 2 of 2: pCSC1 Transform
+
+samples:
+label          strain         antibiotic     product        incubate       
+               Mach1          Kan            pCSC1                         
+               Mach1          Kan            pCSC2                         
+               Mach1          Kan            pCSC3                         
+               Mach1          Kan            pCSC4                         
+
+source:
+label            concentration    location         
+pCSC2                             thermocylcer__   
+pCSC1                             thermocylcer__   
+pCSC4                             thermocylcer__   
+pCSC3                             thermocylcer__   
+
+rescue_required?: yes
+END OF LAB SHEETS FOR EXPERIMENT pCSC1

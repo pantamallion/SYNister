@@ -1,0 +1,170 @@
+LABSHEETS FOR EXPERIMENT: Lycopene9Step 1 of 8: Lycopene9 PCR
+
+protocol: Phusion
+
+samples:
+label          primer1        primer2        template       product        
+               BC-F           BC-R           Bac-Cer-gen.   BC-frag        
+               PS-F           PS-R           Pseu-Aur-gen.  PA-frag        
+               SP-F           SP-R           Strep-Pyogen-gen.SP-frag        
+
+source:
+label            concentration    location         
+SP-F                              benchtop, lyophilized stock [VERIFY]
+SP-R                              benchtop, lyophilized stock [VERIFY]
+BC-F                              benchtop, lyophilized stock [VERIFY]
+Strep-Pyogen-gen.                 benchtop, lyophilized stock [VERIFY]
+BC-R                              benchtop, lyophilized stock [VERIFY]
+PS-F                              benchtop, lyophilized stock [VERIFY]
+Bac-Cer-gen.                      benchtop, lyophilized stock [VERIFY]
+Pseu-Aur-gen.                     benchtop, lyophilized stock [VERIFY]
+PS-R                              benchtop, lyophilized stock [VERIFY]
+
+destination: thermocycler__
+program: 55
+
+destinations:
+label               concentration       location            
+10uM SP-F           10uM                                    
+10uM SP-R           10uM                                    
+10uM BC-F           10uM                                    
+10uM Strep-Pyogen-gen.10uM                                    
+10uM BC-R           10uM                                    
+10uM PS-F           10uM                                    
+10uM Bac-Cer-gen.   10uM                                    
+10uM Pseu-Aur-gen.  10uM                                    
+10uM PS-R           10uM                                    
+SP-F                100uM                                   
+SP-R                100uM                                   
+BC-F                100uM                                   
+Strep-Pyogen-gen.   100uM                                   
+BC-R                100uM                                   
+PS-F                100uM                                   
+Bac-Cer-gen.        100uM                                   
+Pseu-Aur-gen.       100uM                                   
+PS-R                100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 2 of 8: Lycopene9 PCR
+
+protocol: Q5
+
+samples:
+label          primer1        primer2        template       product        
+               pLYC-A-F       pLYC-A-R       pLYC33K        fragB          
+               pLYC-B-F       pLYC-B-R       pLYC33K        fragC          
+
+source:
+label            concentration    location         
+pLYC-A-F                          benchtop, lyophilized stock [VERIFY]
+pLYC-B-R                          benchtop, lyophilized stock [VERIFY]
+pLYC-B-F                          benchtop, lyophilized stock [VERIFY]
+pLYC33K                           benchtop, lyophilized stock [VERIFY]
+pLYC-A-R                          benchtop, lyophilized stock [VERIFY]
+
+destination: thermocycler__
+program: Q5-8K
+
+destinations:
+label               concentration       location            
+10uM pLYC-A-F       10uM                                    
+10uM pLYC-B-R       10uM                                    
+10uM pLYC-B-F       10uM                                    
+10uM pLYC33K        10uM                                    
+10uM pLYC-A-R       10uM                                    
+pLYC-A-F            100uM                                   
+pLYC-B-R            100uM                                   
+pLYC-B-F            100uM                                   
+pLYC33K             100uM                                   
+pLYC-A-R            100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 3 of 8: Lycopene9 Gel
+
+samples:
+reaction       size           product        
+               1006           BC-frag        
+               1004           PA-frag        
+               974            SP-frag        
+
+source:
+thermocycler__   
+Step 4 of 8: Lycopene9 Gel
+
+samples:
+reaction       size           product        
+               4507           fragB          
+               4492           fragC          
+
+source:
+thermocycler__   
+Step 5 of 8: Lycopene9 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               BC-frag        50 uL                         BC-frag        
+               PA-frag        50 uL                         PA-frag        
+               SP-frag        50 uL                         SP-frag        
+
+source:
+thermocycler__   
+Step 6 of 8: Lycopene9 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               fragB          50 uL                         fragB          
+               fragC          50 uL                         fragC          
+
+source:
+                 
+Step 7 of 8: Lycopene9 Golden Gate Assembly
+
+[VERIFY] Master Mix:
+24.0 uL ddH2O
+4.0 10x T4 DNA Ligase Buffer
+2.0 uL fragB
+2.0 uL fragC
+2.0 uL BsaI
+
+Recipe [TOTAL = 10uL]:
+8.5 uL Master Mix
+1 uL remaining DNA
+0.5 uL T4 DNA ligase
+
+samples:
+label     dna                        enzyme    product   
+          BC-frag, fragB, fragC      BsaI      pLYC49A   
+          PA-frag, fragB, fragC      BsaI      pLYC49B   
+          SP-frag, fragB, fragC      BsaI      pLYC49C   
+
+source:
+label            concentration    location         
+SP-frag                                            
+fragB                                              
+fragC                                              
+BC-frag                                            
+PA-frag                                            
+
+destination: thermocycler__
+program: main/GG1
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 8 of 8: Lycopene9 Transform
+
+samples:
+label          strain         antibiotic     product        incubate       
+               Mach1          Amp            pLYC49A                       
+               Mach1          Amp            pLYC49B                       
+               Mach1          Amp            pLYC49C                       
+
+source:
+label            concentration    location         
+pLYC49C                           thermocylcer__   
+pLYC49B                           thermocylcer__   
+pLYC49A                           thermocylcer__   
+
+rescue_required?: no
+END OF LAB SHEETS FOR EXPERIMENT Lycopene9

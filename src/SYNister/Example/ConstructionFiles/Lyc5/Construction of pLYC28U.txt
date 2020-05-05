@@ -1,0 +1,4 @@
+PCR G00101,TP3U on p20N94    (f3U)
+PCR PF4a,BR4a on pLYC25    (back1-4)PCR BF4a,PR4a on pLYC25    (back2-4)
+Assemble f3U,back1-4,back2-4        (BsaI, pLYC28U)	
+Transform pLYC28U (Mach1, Amp)

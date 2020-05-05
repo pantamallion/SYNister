@@ -1,0 +1,143 @@
+LABSHEETS FOR EXPERIMENT: Lyc10Step 1 of 8: Lyc10 PCR
+
+protocol: Phusion
+
+samples:
+label          primer1        primer2        template       product        
+               BF3a           PR2a           pLYC33K        back2          
+               G00101         TP2H           p20N88         part1          
+
+source:
+label            concentration    location         
+BF3a             100uM            LYC_back1/C3     
+PR2a             100uM            LYC_back1/D2     
+TP2H             10uM             TPcon4_10uM/B2   
+p20N88           miniprep         TPcon4_mini/B2   
+pLYC33K                           benchtop, lyophilized stock [VERIFY]
+G00101           2.66 uM          oligos1/B5       
+
+destination: thermocycler__
+program: main/phu1
+
+destinations:
+label               concentration       location            
+10uM pLYC33K        10uM                                    
+pLYC33K             100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 2 of 8: Lyc10 PCR
+
+protocol: Q5
+
+samples:
+label          primer1        primer2        template       product        
+               PF3a           BR3a           pLYC33K        back1          
+
+source:
+label            concentration    location         
+PF3a             100uM            LYC_back1/A3     
+BR3a             100uM            LYC_back1/B3     
+pLYC33K                           benchtop, lyophilized stock [VERIFY]
+
+destination: thermocycler__
+program: Q5-8K
+
+destinations:
+label               concentration       location            
+10uM pLYC33K        10uM                                    
+pLYC33K             100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 3 of 8: Lyc10 Gel
+
+samples:
+reaction       size           product        
+               3780           back2          
+               2754           part1          
+
+source:
+thermocycler__   
+Step 4 of 8: Lyc10 Gel
+
+samples:
+reaction       size           product        
+               4739           back1          
+
+source:
+thermocycler__   
+Step 5 of 8: Lyc10 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               back2          50 uL                         back2          
+               part1          50 uL                         part1          
+
+source:
+thermocycler__   
+Step 6 of 8: Lyc10 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               back1          50 uL                         back1          
+
+source:
+                 
+Step 7 of 8: Lyc10 Golden Gate Assembly
+
+[VERIFY] Master Mix:
+42.0 uL ddH2O
+7.0 10x T4 DNA Ligase Buffer
+3.5 uL part1
+3.5 uL back1
+3.5 uL back2
+3.5 uL BsaI
+
+Recipe [TOTAL = 10uL]:
+8.5 uL Master Mix
+1 uL remaining DNA
+0.5 uL T4 DNA ligase
+
+samples:
+label     dna                        enzyme    product   
+          back1, back2, part1        BsaI      pLYC46H   
+          back1, back2, part1        BsaI      pLYC46L   
+          back1, back2, part1        BsaI      pLYC46M   
+          back1, back2, part1        BsaI      pLYC46O   
+          back1, back2, part1        BsaI      pLYC46S   
+          back1, back2, part1        BsaI      pLYC46U   
+
+source:
+label            concentration    location         
+part1                                              
+back1                                              
+back2                                              
+
+destination: thermocycler__
+program: main/GG1
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 8 of 8: Lyc10 Transform
+
+samples:
+label          strain         antibiotic     product        incubate       
+               Mach1          Amp            pLYC46H                       
+               Mach1          Amp            pLYC46L                       
+               Mach1          Amp            pLYC46M                       
+               Mach1          Amp            pLYC46O                       
+               Mach1          Amp            pLYC46S                       
+               Mach1          Amp            pLYC46U                       
+
+source:
+label            concentration    location         
+pLYC46U                           thermocylcer__   
+pLYC46S                           thermocylcer__   
+pLYC46O                           thermocylcer__   
+pLYC46M                           thermocylcer__   
+pLYC46L                           thermocylcer__   
+pLYC46H                           thermocylcer__   
+
+rescue_required?: no
+END OF LAB SHEETS FOR EXPERIMENT Lyc10

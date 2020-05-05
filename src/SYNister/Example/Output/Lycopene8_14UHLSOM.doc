@@ -1,0 +1,101 @@
+LABSHEETS FOR EXPERIMENT: Lycopene8_14UHLSOMStep 1 of 5: Lycopene8_14UHLSOM PCR
+
+protocol: Q5
+
+samples:
+label          primer1        primer2        template       product        
+               PF6a           BR6a           pLYC33K-A      33back1        
+               BF6a           PR6a           pLYC33K-A      33back2        
+
+source:
+label            concentration    location         
+pLYC33K-A        miniprep         Box_Lyc6/A7      
+PF6a             100uM            LYC_back1/A6     
+BR6a             100uM            LYC_back1/B6     
+BF6a             100uM            LYC_back1/C6     
+PR6a             100uM            LYC_back1/D6     
+
+destination: thermocycler__
+program: Q5-8K
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 2 of 5: Lycopene8_14UHLSOM Gel
+
+samples:
+reaction       size           product        
+               5359           33back1        
+               4493           33back2        
+
+source:
+thermocycler__   
+Step 3 of 5: Lycopene8_14UHLSOM Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               33back1        50 uL                         33back1        
+               33back2        50 uL                         33back2        
+
+source:
+thermocycler__   
+Step 4 of 5: Lycopene8_14UHLSOM Golden Gate Assembly
+
+[VERIFY] Master Mix:
+42.0 uL ddH2O
+7.0 10x T4 DNA Ligase Buffer
+3.5 uL 33back2
+3.5 uL 33back1
+3.5 uL BsaI
+
+Recipe [TOTAL = 10uL]:
+8.5 uL Master Mix
+1 uL remaining DNA
+0.5 uL T4 DNA ligase
+
+samples:
+label     dna                        enzyme    product   
+          f14H, 33back1, 33back2     BsaI      pLYC44H   
+          f14L, 33back1, 33back2     BsaI      pLYC44L   
+          f14M, 33back1, 33back2     BsaI      pLYC44M   
+          f14O, 33back1, 33back2     BsaI      pLYC44O   
+          f14S, 33back1, 33back2     BsaI      pLYC44S   
+          f14U, 33back1, 33back2     BsaI      pLYC44U   
+
+source:
+label            concentration    location         
+33back2                                            
+33back1                                            
+f14U             zymo             TPcon4_zymos/A6  
+f14H             zymo             TPcon4_zymos/B6  
+f14L             zymo             TPcon4_zymos/C6  
+f14S             zymo             TPcon4_zymos/D6  
+f14O             zymo             TPcon4_zymos/E6  
+f14M             zymo             TPcon4_zymos/F6  
+
+destination: thermocycler__
+program: main/GG1
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 5 of 5: Lycopene8_14UHLSOM Transform
+
+samples:
+label          strain         antibiotic     product        incubate       
+               Mach1          Amp            pLYC44H                       
+               Mach1          Amp            pLYC44L                       
+               Mach1          Amp            pLYC44M                       
+               Mach1          Amp            pLYC44O                       
+               Mach1          Amp            pLYC44S                       
+               Mach1          Amp            pLYC44U                       
+
+source:
+label            concentration    location         
+pLYC44U                           thermocylcer__   
+pLYC44S                           thermocylcer__   
+pLYC44O                           thermocylcer__   
+pLYC44M                           thermocylcer__   
+pLYC44L                           thermocylcer__   
+pLYC44H                           thermocylcer__   
+
+rescue_required?: no
+END OF LAB SHEETS FOR EXPERIMENT Lycopene8_14UHLSOM

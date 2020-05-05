@@ -1,0 +1,4 @@
+PCR G00101,TP6M on p20N35    (f6M)
+PCR PF3a,BR3a on pLYC25    (back1-3)PCR BF3a,PR3a on pLYC25    (back2-3)
+Assemble f6M,back1-3,back2-3        (BsaI, pLYC27M)
+Transform pLYC27M (Mach1, Amp)

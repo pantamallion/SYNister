@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SYNister">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/SYNister_jar/SYNister.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

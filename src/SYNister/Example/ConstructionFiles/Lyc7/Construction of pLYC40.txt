@@ -1,0 +1,12 @@
+PCR AL20,AL21 on pLYC33K	(4974, back1-40)
+PCR AL22,AL23 on pLYC33K	(4983, back2-40)
+PCR dxs-for,dxs-rev on MG1655_dxs	(1895, part-40)
+Assemble back1-40,back2-40,part-40	(BsaI, pLYC40)
+Transform pLYC40	(Mach1, Amp)
+---------------------------------------------------
+AL20	agtcaGGTCTCataatgattatcaaaaaggatcttc
+AL21	agtcaGGTCTCacgtacctgccgacctacaggcgac
+AL22	agtcaGGTCTCatacgcttgggaagctgtggtatgg
+AL23	tggtgGGTCTCtcgagtcatgaccaaaatcccttaa
+dxs-for	atgctGGTCTCactcgatgagttttgatattgccaa
+dxs-rev	agtcaGGTCTCcattattatgccagccaggccttga

@@ -1,0 +1,13 @@
+PCR ZH17,ZH2R on pLYC33K	(5087 bp, pcrA36)
+PCR ZH2,ZH18R on pLYC33K	(4900 bp, pcrB36)
+PCR MBS18,MBS17R on MG1655_dxs	(1976 bp, pcrC36)
+Assemble pcrA36,pcrB36,pcrC36	(BsaI, pLYC36)
+Transform pLYC36	(Mach1, Amp)
+--------------------------------
+ZH17	cactcctgctatgcttaagaacacttacaaaacttccaag			
+MBS17R	cttggaagttttgtaagtgtttcttaagcatagcaggag	 			
+ZH2	ccttttgggttcaagcagtacataacgatggaaccacattacaggagtagtgat	
+ZH2R	atcactactcctgtaatgtggttccatcgttatgtactgcttgaacccaaaagg	
+MBS18	aataatttgggatatgtgagcatccagcgtaataaataaac			
+ZH18R	tattacgctggatgatgtagctcacatatcccaaattatt
+

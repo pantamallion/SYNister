@@ -1,0 +1,77 @@
+LABSHEETS FOR EXPERIMENT: L_construction_filesStep 1 of 5: L_construction_files PCR
+
+protocol: Phusion
+
+samples:
+label          primer1        primer2        template       product        
+               targAf         targAr         p20N5          pcrA           
+               targBf         targBr         pTargetF       pcrB           
+
+source:
+label            concentration    location         
+targAf           100 uM           oligos1/E7       
+targAr           100 uM           oligos1/F7       
+targBf           100 uM           oligos1/G7       
+targBr           100 uM           oligos1/H7       
+pTargetF                          templates/A1     
+p20N5                             templates/A3     
+
+destination: thermocycler__
+program: 55
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 2 of 5: L_construction_files Gel
+
+samples:
+reaction       size           product        
+               1200           pcrA           
+               1172           pcrB           
+
+source:
+thermocycler__   
+Step 3 of 5: L_construction_files Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               pcrA           50 uL                         pcrA           
+               pcrB           50 uL                         pcrB           
+
+source:
+thermocycler__   
+Step 4 of 5: L_construction_files Gibson Assembly
+
+DNA Mix:
+5 uL of each oligo
+
+Reaction Mix:
+4 uL ddH2O
+1 uL DNA Mix
+5 uL 2X Gibson Mix
+
+samples:
+label     dna                        enzyme    product   
+          pcrA, pcrB                 gibson    pTarg2    
+
+source:
+label            concentration    location         
+pcrA                                               
+pcrB                                               
+
+destination: thermocycler__
+program: main/GIB2
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 5 of 5: L_construction_files Transform
+
+samples:
+label          strain         antibiotic     product        incubate       
+               Mach1          Amp            pTarg2                        
+
+source:
+label            concentration    location         
+pTarg2                            thermocylcer__   
+
+rescue_required?: no
+END OF LAB SHEETS FOR EXPERIMENT L_construction_files

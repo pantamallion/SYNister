@@ -1,0 +1,5 @@
+>Construction of pTarget-cscR3
+pcr cscR3,pTargRev on pTargetF	(3927 bp, ipcr3)
+digest ipcr3 with SpeI/DpnI 500	(dig3)
+ligate dig3	(lig3)
+transform lig3	(Mach1, Spec)

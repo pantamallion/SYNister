@@ -1,0 +1,127 @@
+LABSHEETS FOR EXPERIMENT: Lyc2Step 1 of 8: Lyc2 PCR
+
+protocol: Phusion
+
+samples:
+label          primer1        primer2        template       product        
+               ZH6            ZH1R           pAtipiTrc      pcrC           
+
+source:
+label            concentration    location         
+pAtipiTrc        20x dil.         boxR/A1          
+ZH1R             100 uM           oligo-1/B1       
+ZH6              100 uM           oligo-1/B2       
+
+destination: thermocycler__
+program: 55
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 2 of 8: Lyc2 PCR
+
+protocol: Phusion
+
+samples:
+label          primer1        primer2        template       product        
+               ZH1            ZH2R           pLYC5          pcrA           
+               ZH2            ZH6R           pLYC5          pcrB           
+
+source:
+label            concentration    location         
+pLYC5                             donner1/B8       
+ZH1              100 uM           oligo-1/A1       
+ZH2              100 uM           oligo-1/C1       
+ZH6R             100 uM           oligo-1/C2       
+ZH2R             100 uM           oligo-1/D1       
+
+destination: thermocycler__
+program: main/phu1
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 3 of 8: Lyc2 Gel
+
+samples:
+reaction       size           product        
+               1349           pcrC           
+
+source:
+thermocycler__   
+Step 4 of 8: Lyc2 Gel
+
+samples:
+reaction       size           product        
+               3293           pcrA           
+               3683           pcrB           
+
+source:
+thermocycler__   
+Step 5 of 8: Lyc2 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               pcrC           50 uL                         pcrC           
+
+source:
+thermocycler__   
+Step 6 of 8: Lyc2 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               pcrA           50 uL                         pcrA           
+               pcrB           50 uL                         pcrB           
+
+source:
+                 
+Step 7 of 8: Lyc2 Gibson Assembly
+
+DNA Mix:
+5 uL of each oligo
+
+Reaction Mix:
+4 uL ddH2O
+1 uL DNA Mix
+5 uL 2X Gibson Mix
+
+samples:
+label     dna                        enzyme    product   
+          pcrA, pcrB, pcrC           gibson    pLYC10    
+          pcrA, pcrB, pcrC           gibson    pLYC11    
+          pcrA, pcrB, pcrC           gibson    pLYC12    
+          pcrA, pcrB, pcrC           gibson    pLYC13    
+          pcrA, pcrB, pcrC           gibson    pLYC8     
+          pcrA, pcrB, pcrC           gibson    pLYC9     
+
+source:
+label            concentration    location         
+pcrC                                               
+pcrA                                               
+pcrB                                               
+
+destination: thermocycler__
+program: main/GIB2
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 8 of 8: Lyc2 Transform
+
+samples:
+label          strain         antibiotic     product        incubate       
+               Mach1          Amp            pLYC10                        
+               Mach1          Amp            pLYC11                        
+               Mach1          Amp            pLYC12                        
+               Mach1          Amp            pLYC13                        
+               Mach1          Amp            pLYC8                         
+               Mach1          Amp            pLYC9                         
+
+source:
+label            concentration    location         
+pLYC12                            thermocylcer__   
+pLYC11                            thermocylcer__   
+pLYC10                            thermocylcer__   
+pLYC8                             thermocylcer__   
+pLYC9                             thermocylcer__   
+pLYC13                            thermocylcer__   
+
+rescue_required?: no
+END OF LAB SHEETS FOR EXPERIMENT Lyc2

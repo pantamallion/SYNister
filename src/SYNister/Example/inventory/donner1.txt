@@ -1,0 +1,27 @@
+>name	donner1								
+>description	140L  plasmids								
+>location	minifreezer								
+>plate_type	cardboard_box								
+>temperature	-20								
+									
+>>composition	A	B	C	D	E	F	G	H	I
+1	pTargetF	pimar1	pimar2	pimar3	pimar4	pimar5	pimar6	pimar7	pimar8
+2	pimar4	pCas9	pTargetF	pAtipiTrc	pAC-LYC	pLYC1	pLYC3	pLYC5	
+3									
+4									
+5									
+6									
+7									
+8									
+9									
+									
+>>note	A	B	C	D	E	F	G	H	I
+1									
+2	scraped mini	scraped mini	scraped mini	pool	pool				
+3									
+4									
+5									
+6									
+7									
+8									
+9									

@@ -1,0 +1,119 @@
+LABSHEETS FOR EXPERIMENT: ilvEStep 1 of 7: ilvE PCR
+
+protocol: Phusion
+
+samples:
+label          primer1        primer2        template       product        
+               ilvE1          pTargRev       pTargetF       ipcr1          
+               ilvE2          pTargRev       pTargetF       ipcr2          
+               ilvE3          pTargRev       pTargetF       ipcr3          
+
+source:
+label            concentration    location         
+pTargRev         10 uM            oligos1/B1       
+ilvE1            100 uM           oligos1/C2       
+ilvE2            100 uM           oligos1/D2       
+ilvE3            100 uM           oligos1/E2       
+pTargetF                          templates/A1     
+
+destination: thermocycler__
+program: main/phu1
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 2 of 7: ilvE Gel
+
+samples:
+reaction       size           product        
+               3927           ipcr1          
+               3927           ipcr2          
+               3927           ipcr3          
+
+source:
+thermocycler__   
+Step 3 of 7: ilvE Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               ipcr1          50 uL                         ipcr1          
+               ipcr2          50 uL                         ipcr2          
+               ipcr3          50 uL                         ipcr3          
+
+source:
+thermocycler__   
+Step 4 of 7: ilvE Digest
+
+Reaction Mix:
+8uL eluted eluted DNA
+1uL NEB Buffer 2 (10x)
+0.5 SpeI
+0.5 DpnI
+
+samples:
+label          dna            enzymes        product        
+               ipcr1          SpeI, DpnI     dig1           
+               ipcr2          SpeI, DpnI     dig2           
+               ipcr3          SpeI, DpnI     dig3           
+
+source:
+label            concentration    location         
+ipcr2                                              
+ipcr3                                              
+ipcr1                                              
+
+destination: thermocycler__
+program:  
+
+Note:
+Never let enzymes warm up!  Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing.
+Step 5 of 7: ilvE Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               dig1           50 uL                         dig1           
+               dig2           50 uL                         dig2           
+               dig3           50 uL                         dig3           
+
+source:
+thermocycler__   
+Step 6 of 7: ilvE Ligate
+
+Reaction Mix:
+<total volume 10 uL> uL ddH2O
+1 uL T4 DNA Ligase Buffer
+1 uL of each DNA
+0.5 uL T4 DNA Ligase
+
+samples:
+label          digest         product        
+               dig            lig1           
+               dig            lig2           
+               dig            lig3           
+
+source:
+label            location         
+                                  
+                                  
+                                  
+
+destination: thermocycler__
+program: main/LIGATE
+
+Note:
+Never let enzymes warm up!  Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing.
+Step 7 of 7: ilvE Transform
+
+samples:
+label          strain         antibiotic     product        incubate       
+               Mach1          Spec           lig1                          
+               Mach1          Spec           lig2                          
+               Mach1          Spec           lig3                          
+
+source:
+label            concentration    location         
+lig1                              thermocylcer__   
+lig2                              thermocylcer__   
+lig3                              thermocylcer__   
+
+rescue_required?: yes
+END OF LAB SHEETS FOR EXPERIMENT ilvE

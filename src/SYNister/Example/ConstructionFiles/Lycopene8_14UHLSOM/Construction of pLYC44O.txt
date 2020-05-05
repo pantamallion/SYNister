@@ -1,0 +1,20 @@
+pcr G00101,TP14O on p20N108		(227bp, f14O)
+pcr PF6a,BR6a on pLYC33K-A		(5359bp, 33back1)
+pcr BF6a,PR6a on pLYC33K-A		(4493bp, 33back2)
+assemble f14O,33back1,33back2		(BsaI, pLYC44O)
+transform pLYC44O			(Mach1, Amp)
+--------------------------------
+G00101	attaccgcctttgagtgagc
+TP14O	ccaaaggtctcActacTactaatataatcactgaatc
+PF6a	ccataGGTCTCTgtaggtctgcggggcaaaacaatcg
+PR6a	cagttGGTCTCAaggggatgttcagagtttgtggatg
+BF6a	ccataGGTCTCTgatgggggtgggctcccagcg
+BR6a	cagttGGTCTCAcatcgcaatttttagcacctgc
+
+
+
+
+
+
+
+

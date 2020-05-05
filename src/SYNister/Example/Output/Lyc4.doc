@@ -1,0 +1,141 @@
+LABSHEETS FOR EXPERIMENT: Lyc4Step 1 of 8: Lyc4 PCR
+
+protocol: Phusion
+
+samples:
+label          primer1        primer2        template       product        
+               G00101         ZH24           TPU4UBER       pcrC           
+
+source:
+label            concentration    location         
+TPU4UBER                          benchtop, lyophilized stock [VERIFY]
+ZH24             100 uM           oligo-1/B6       
+G00101           2.66 uM          oligos1/B5       
+
+destination: thermocycler__
+program: 55
+
+destinations:
+label               concentration       location            
+10uM TPU4UBER       10uM                                    
+TPU4UBER            100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 2 of 8: Lyc4 PCR
+
+protocol: Q5
+
+samples:
+label          primer1        primer2        template       product        
+               ZH30           ZH31           pLYC18         pcrA           
+               ZH32           ZH33           pLYC18         pcrB           
+
+source:
+label            concentration    location         
+pLYC18                            benchtop, lyophilized stock [VERIFY]
+ZH32             100 uM           oligo-1/A7       
+ZH33             100 uM           oligo-1/B7       
+ZH30             100 uM           oligo-1/H6       
+ZH31             100 uM           oligo-1/I6       
+
+destination: thermocycler__
+program: Q5-8K
+
+destinations:
+label               concentration       location            
+10uM pLYC18         10uM                                    
+pLYC18              100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 3 of 8: Lyc4 Gel
+
+samples:
+reaction       size           product        
+               226            pcrC           
+
+source:
+thermocycler__   
+Step 4 of 8: Lyc4 Gel
+
+samples:
+reaction       size           product        
+               4699           pcrA           
+               4753           pcrB           
+
+source:
+thermocycler__   
+Step 5 of 8: Lyc4 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               pcrC           50 uL                         pcrC           
+
+source:
+thermocycler__   
+Step 6 of 8: Lyc4 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               pcrA           50 uL                         pcrA           
+               pcrB           50 uL                         pcrB           
+
+source:
+                 
+Step 7 of 8: Lyc4 Golden Gate Assembly
+
+[VERIFY] Master Mix:
+42.0 uL ddH2O
+7.0 10x T4 DNA Ligase Buffer
+3.5 uL pcrC
+3.5 uL pcrA
+3.5 uL pcrB
+3.5 uL BsaI
+
+Recipe [TOTAL = 10uL]:
+8.5 uL Master Mix
+1 uL remaining DNA
+0.5 uL T4 DNA ligase
+
+samples:
+label     dna                        enzyme    product   
+          pcrA, pcrB, pcrC           BsaI      pLYC20    
+          pcrA, pcrB, pcrC           BsaI      pLYC21    
+          pcrA, pcrB, pcrC           BsaI      pLYC21    
+          pcrA, pcrB, pcrC           BsaI      pLYC23    
+          pcrA, pcrB, pcrC           BsaI      pLYC24    
+          pcrA, pcrB, pcrC           BsaI      pLYC25    
+
+source:
+label            concentration    location         
+pcrC                                               
+pcrA                                               
+pcrB                                               
+
+destination: thermocycler__
+program: main/GG1
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 8 of 8: Lyc4 Transform
+
+samples:
+label          strain         antibiotic     product        incubate       
+               Mach1          Amp            pLYC20                        
+               Mach1          Amp            pLYC21                        
+               Mach1          Amp            pLYC21                        
+               Mach1          Amp            pLYC23                        
+               Mach1          Amp            pLYC24                        
+               Mach1          Amp            pLYC25                        
+
+source:
+label            concentration    location         
+pLYC23                            thermocylcer__   
+pLYC21                            thermocylcer__   
+pLYC20                            thermocylcer__   
+pLYC25                            thermocylcer__   
+pLYC24                            thermocylcer__   
+
+rescue_required?: no
+END OF LAB SHEETS FOR EXPERIMENT Lyc4

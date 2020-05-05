@@ -1,0 +1,12 @@
+PCR ZH15,ZH2R on pLYC33K	(5987 bp, pcrA37)
+PCR ZH2,ZH16R on pLYC33K	(3980 bp, pcrB37)
+PCR ZH16,ZH15R on MG1655_ispG	(1235 bp, pcrC37)
+Assemble pcrA37,pcrB37,pcrC37	(BsaI, pLYC37)
+Transform pLYC37	(Mach1, Amp)
+--------------------------------
+ZH15	gcctcgcttcccgtgtatgaactcgaccggaattatcgat
+ZH15R	atcgataattccggtcgagttcatacacgggaagcgaggc
+ZH2	ccttttgggttcaagcagtacataacgatggaaccacattacaggagtagtgat
+ZH2R	atcactactcctgtaatgtggttccatcgttatgtactgcttgaacccaaaagg
+ZH16	atcagacaatctgtgtgggccaccggcgcagtaacagacg
+ZH16R	cgtctgttactgcgccggtggcccacacagattgtctgat

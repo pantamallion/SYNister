@@ -1,0 +1,27 @@
+>name	oligos2								
+>description	140L  oligo stocks								
+>location	minifreezer								
+>plate_type	cardboard_box								
+>temperature	-20								
+									
+>>name	1	2	3	4	5	6	7	8	9
+A	norfF0	cadA-R	olyc5						
+B	dap1b	cadAFSeq	olyc1r						
+C	dap2b	cadARSeq	olyc2r						
+D	dap7	cadAFSeq	olyc3r						
+E	dap8	cadARSeq	olyc4r						
+F	orfF0b	olyc1	olyc5r						
+G	orfF0c	olyc2							
+H	orfF0d	olyc3							
+I	cadA-F	olyc4							
+									
+>>concentration	1	2	3	4	5	6	7	8	9
+A	100 uM	100 uM	100 uM						
+B	100 uM	100 uM	100 uM						
+C	100 uM	100 uM	100 uM						
+D	100 uM	10 uM	100 uM						
+E	100 uM	10 uM	100 uM						
+F	100 uM	100 uM	100 uM						
+G	100 uM	100 uM							
+H	100 uM	100 uM							
+I	100 uM	100 uM							

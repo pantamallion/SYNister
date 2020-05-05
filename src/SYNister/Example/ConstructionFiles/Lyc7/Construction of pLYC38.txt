@@ -1,0 +1,12 @@
+PCR AL19,AL20R on pLYC33K	(5058 bp, pcrA)
+PCR ZH20,ZH23R on pLYC33K	(3596 bp, pcrB)
+PCR ZH23,ZH22R on MG1655_ispG	(1195 bp, pcrC)
+Assemble pcrA,pcrB,pcrC	(BsaI, pLYC38)
+Transform pLYC38	(Mach1, Amp)
+--------------------------------
+AL19	gcctcgcttcccgtgtatgacagcccgggggatccactag
+ZH22R	caggaattcgcggccgcaaatcatacacgggaagcgaggc
+ZH20	ctggcgattcgcctgcaggcggcagggatcccaaccgtac
+AL20R	cccgctgctccagcagtacggttgggatccctgcc
+ZH23	cacctcaggcaataataaagcaccggcgcagtaacagacg
+ZH23R	cgtctgttactgcgccggtgctttattattgcctgaggtg

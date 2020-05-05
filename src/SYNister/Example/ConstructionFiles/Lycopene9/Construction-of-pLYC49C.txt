@@ -1,0 +1,12 @@
+pcr SP-F,SP-R on Strep-Pyogen-gen. (974 bp, SP-frag) 
+pcr pLYC-A-F,pLYC-A-R on pLYC33K (4507 bp, fragB) 
+pcr pLYC-B-F,pLYC-B-R on pLYC33K (4492 bp, fragC) 
+assemble SP-frag,fragB,fragC (BsaI, pLYC49C) 
+transform pLYC49C (Mach1, Amp)
+---------------------------------------------------
+SP-F	agtcaGGTCTCaGATAgatgcaagctgatggcacag	Forward BsaI for ggps gene in Streptococcus pyogenes
+SP-R	tggtgGGTCTCaAAGCtgcttataggctaacacatc	Reverse BsaI for ggps gene in Streptococcus pyogenes
+pLYC-A-F	atgctGGTCTCcGCTGaagatgtaccagtcgatgag	Forward BsaI for pLYC33 template-near ggpps
+pLYC-A-R	atgctGGTCTCaGCTTagtatcagttaaccgtagac	Reverse BsaI for pLYC33 template-splitter
+pLYC-B-F	agctaGGTCTCtGATAccgcccttttgggttcaagcag	Forward BsaI for pLYC33 template-splitter
+pLYC-B-R	agctaGGTCTCcCAGCtacaataccaagctcatcgagaa	Reverse BsaI for pLYC33 template-near ggpps

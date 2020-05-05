@@ -1,0 +1,29 @@
+>name	oligos1								
+>description	140L  oligo stocks								
+>location	minifreezer								
+>plate_type	cardboard_box								
+>temperature	-20								
+									
+>>name	1	2	3	4	5	6	7	8	9
+A	pTargRev	tyrB2	Promoter-F	gg1_3	L4440	nw0-F	yyBla-F	dap1	T4L1
+B	pTargRev	tyrB3	Promoter-R	gg1_4	G00101	nw1-R	yyBla-R	dap2	T4L2
+C	cscR1	ilvE1	amilCP-F	jbag1F	ca998	nw2-F	yyEI-F	dap3	T4L3
+D	cscR2	ilvE2	amilCP-R	jbag1R	yysgSeqF	nw3-R	yyEI-R	dap4	T4L4
+E	cscR3	ilvE3	Bla-F	jbag2F	yysgSeqF	nw4-F	targAf	dap5	P1Lf
+F	cscB1	aspC1	Bla-R	jbag2R	yysgSeqR	nw5-R	targAr	dap6	P1Lr
+G	cscB2	aspC2	Ori-F	jbag3F	yysgSeqR	nw6-F	targBf	orfF0	orfR1
+H	cscB3	aspC3	Ori-R	jbag3R	jbagSeq	nw7-R	targBr	orfF1	orfR2
+I	tyrB1	yysgSeqF	gg1_1	jbag4F	jbagSeq	p15aR	blaseqR	orfF2	backR0
+J	L4440	yysgSeqR	gg1_2	jbag4R	orfF0	p15aR	blaseqR	orfR0	backF2
+									
+>>concentration	1	2	3	4	5	6	7	8	9
+A	100 uM	100 uM	100 uM	100 uM	2.66 uM	100 uM	100 uM	100 uM	100 uM
+B	10 uM	100 uM	100 uM	100 uM	2.66 uM	100 uM	100 uM	100 uM	100 uM
+C	100 uM	100 uM	100 uM	100 uM	2.66 uM	100 uM	100 uM	100 uM	100 uM
+D	100 uM	100 uM	100 uM	100 uM	100 uM	100 uM	100 uM	100 uM	100 uM
+E	100 uM	100 uM	100 uM	100 uM	2.66 uM	100 uM	100 uM	100 uM	100 uM
+F	100 uM	100 uM	100 uM	100 uM	100 uM	100 uM	100 uM	100 uM	100 uM
+G	100 uM	100 uM	100 uM	100 uM	2.66 uM	100 uM	100 uM	100 uM	100 uM
+H	100 uM	100 uM	100 uM	100 uM	100 uM	100 uM	100 uM	100 uM	100 uM
+I	100 uM	100 uM	100 uM	100 uM	2.66 uM	100 uM	100 uM	100 uM	100 uM
+J	100 uM	100 uM	100 uM	100 uM	2.66 uM	2.66 uM	2.66 uM	100 uM	100 uM

@@ -1,0 +1,20 @@
+pcr PF3a,BR3a on pLYC33K 		(4739 bp, back1)
+pcr BF3a,PR2a on pLYC33K 		(3780 bp, back2)
+pcr G00101,TP2M on p20N31 		(2754 bp, part1)
+assemble back1,back2,part1 		(BsaI, pLYC46M)
+transform pLYC46M 			(Mach1, Amp)
+----------------------------------------------------------------
+>PF3a 		Forward backbone1 oligo for pLYC33K template
+ccataGGTCTCtgtagccgcgcttgaggcgctgttc
+>BR3a		Reverse backbone1 oligo for pLYC33K template
+cagttGGTCTCacatcttcggtgcctgagcgatg
+>BF3a 		Forward backbone2 oligo for pLYC33K template
+ccataGGTCTCtgatgttgccgcacattccac
+>PR2a 		Reverse backbone2 oligo for pLYC33K template
+cagttGGTCTCaagggctgcttgaacccaaaagggcgg
+>G00101 	Forward oligo for TP2M promoter part
+attaccgcctttgagtgagc
+>TP2M 		Reverse oligo for TP2M promoter part
+ccaaaGGTCTCactacTgctagcataatacctaggactg
+
+

@@ -1,0 +1,296 @@
+LABSHEETS FOR EXPERIMENT: Lyc7Step 1 of 11: Lyc7 PCR
+
+protocol: Phusion
+
+samples:
+label          primer1        primer2        template       product        
+               ZH16           ZH15R          MG1655_ispG    pcrC37         
+               ZH23           ZH22R          MG1655_ispG    pcrC           
+               ispG-for       ispG-rev       MG1655_ispG    part           
+
+source:
+label            concentration    location         
+ispG-rev                          benchtop, lyophilized stock [VERIFY]
+ispG-for                          benchtop, lyophilized stock [VERIFY]
+MG1655_ispG                       benchtop, lyophilized stock [VERIFY]
+ZH15R            100 uM           oligo-1/C4       
+ZH16             100 uM           oligo-1/D4       
+ZH22R            100 uM           oligo-1/H5       
+ZH23             100 uM           oligo-1/I5       
+
+destination: thermocycler__
+program: 55
+
+destinations:
+label               concentration       location            
+10uM ispG-rev       10uM                                    
+10uM ispG-for       10uM                                    
+10uM MG1655_ispG    10uM                                    
+ispG-rev            100uM                                   
+ispG-for            100uM                                   
+MG1655_ispG         100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 2 of 11: Lyc7 PCR
+
+protocol: Phusion
+
+samples:
+label          primer1        primer2        template       product        
+               MBS18          MBS17R         MG1655_dxs     pcrC36         
+               ZH2            ZH16R          pLYC33K        pcrB37         
+               ZH20           ZH23R          pLYC33K        pcrB           
+               ZH2            ZH12R          pLYC33K        pcrB39         
+               ZH12           ZH11R          MG1655_dxs     pcrC39         
+               dxs-for        dxs-rev        MG1655_dxs     part-40        
+
+source:
+label            concentration    location         
+dxs-for                           benchtop, lyophilized stock [VERIFY]
+MBS17R                            benchtop, lyophilized stock [VERIFY]
+pLYC33K                           benchtop, lyophilized stock [VERIFY]
+dxs-rev                           benchtop, lyophilized stock [VERIFY]
+MBS18                             benchtop, lyophilized stock [VERIFY]
+MG1655_dxs                        benchtop, lyophilized stock [VERIFY]
+ZH23R            100 uM           oligo-1/A6       
+ZH2              100 uM           oligo-1/C1       
+ZH20             100 uM           oligo-1/C5       
+ZH11R            100 uM           oligo-1/D3       
+ZH12             100 uM           oligo-1/E3       
+ZH16R            100 uM           oligo-1/E4       
+ZH12R            100 uM           oligo-1/F3       
+
+destination: thermocycler__
+program: main/phu1
+
+destinations:
+label               concentration       location            
+10uM dxs-for        10uM                                    
+10uM MBS17R         10uM                                    
+10uM pLYC33K        10uM                                    
+10uM dxs-rev        10uM                                    
+10uM MBS18          10uM                                    
+10uM MG1655_dxs     10uM                                    
+dxs-for             100uM                                   
+MBS17R              100uM                                   
+pLYC33K             100uM                                   
+dxs-rev             100uM                                   
+MBS18               100uM                                   
+MG1655_dxs          100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 3 of 11: Lyc7 PCR
+
+protocol: Q5
+
+samples:
+label          primer1        primer2        template       product        
+               ZH17           ZH2R           pLYC33K        pcrA36         
+               ZH2            ZH18R          pLYC33K        pcrB36         
+               ZH15           ZH2R           pLYC33K        pcrA37         
+               AL19           AL20R          pLYC33K        pcrA           
+               ZH11           ZH2R           pLYC33K        pcrA39         
+               AL20           AL21           pLYC33K        back1-40       
+               AL22           AL23           pLYC33K        back2-40       
+               SK20           SK21           pLYC33K        back1          
+               SK22           SK23           pLYC33K        back2          
+
+source:
+label            concentration    location         
+pLYC33K                           benchtop, lyophilized stock [VERIFY]
+AL19                              benchtop, lyophilized stock [VERIFY]
+SK20                              benchtop, lyophilized stock [VERIFY]
+SK21                              benchtop, lyophilized stock [VERIFY]
+AL23                              benchtop, lyophilized stock [VERIFY]
+AL21                              benchtop, lyophilized stock [VERIFY]
+AL22                              benchtop, lyophilized stock [VERIFY]
+AL20                              benchtop, lyophilized stock [VERIFY]
+AL20R                             benchtop, lyophilized stock [VERIFY]
+SK22                              benchtop, lyophilized stock [VERIFY]
+SK23                              benchtop, lyophilized stock [VERIFY]
+ZH15             100 uM           oligo-1/B4       
+ZH2              100 uM           oligo-1/C1       
+ZH11             100 uM           oligo-1/C3       
+ZH2R             100 uM           oligo-1/D1       
+ZH17             100 uM           oligo-1/F4       
+ZH18R            100 uM           oligo-1/I4       
+
+destination: thermocycler__
+program: Q5-8K
+
+destinations:
+label               concentration       location            
+10uM pLYC33K        10uM                                    
+10uM AL19           10uM                                    
+10uM SK20           10uM                                    
+10uM SK21           10uM                                    
+10uM AL23           10uM                                    
+10uM AL21           10uM                                    
+10uM AL22           10uM                                    
+10uM AL20           10uM                                    
+10uM AL20R          10uM                                    
+10uM SK22           10uM                                    
+10uM SK23           10uM                                    
+pLYC33K             100uM                                   
+AL19                100uM                                   
+SK20                100uM                                   
+SK21                100uM                                   
+AL23                100uM                                   
+AL21                100uM                                   
+AL22                100uM                                   
+AL20                100uM                                   
+AL20R               100uM                                   
+SK22                100uM                                   
+SK23                100uM                                   
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 4 of 11: Lyc7 Gel
+
+samples:
+reaction       size           product        
+               1235           pcrC37         
+               1195           pcrC           
+               1151           part           
+
+source:
+thermocycler__   
+Step 5 of 11: Lyc7 Gel
+
+samples:
+reaction       size           product        
+               1976           pcrC36         
+               3980           pcrB37         
+               3596           pcrB           
+               3960           pcrB39         
+               1981           pcrC39         
+               1895           part-40        
+
+source:
+thermocycler__   
+Step 6 of 11: Lyc7 Gel
+
+samples:
+reaction       size           product        
+               5087           pcrA36         
+               4900           pcrB36         
+               5987           pcrA37         
+               5058           pcrA           
+               6027           pcrA39         
+               4974           back1-40       
+               4983           back2-40       
+               4974           back1          
+               4983           back2          
+
+source:
+thermocycler__   
+Step 7 of 11: Lyc7 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               pcrC37         50 uL                         pcrC37         
+               pcrC           50 uL                         pcrC           
+               part           50 uL                         part           
+
+source:
+thermocycler__   
+Step 8 of 11: Lyc7 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               pcrC36         50 uL                         pcrC36         
+               pcrB37         50 uL                         pcrB37         
+               pcrB           50 uL                         pcrB           
+               pcrB39         50 uL                         pcrB39         
+               pcrC39         50 uL                         pcrC39         
+               part-40        50 uL                         part-40        
+
+source:
+                 
+Step 9 of 11: Lyc7 Zymo
+
+samples:
+reaction       label          elution_vol    destination    product        
+               pcrA36         50 uL                         pcrA36         
+               pcrB36         50 uL                         pcrB36         
+               pcrA37         50 uL                         pcrA37         
+               pcrA           50 uL                         pcrA           
+               pcrA39         50 uL                         pcrA39         
+               back1-40       50 uL                         back1-40       
+               back2-40       50 uL                         back2-40       
+               back1          50 uL                         back1          
+               back2          50 uL                         back2          
+
+source:
+                 
+Step 10 of 11: Lyc7 Golden Gate Assembly
+
+[VERIFY] Master Mix:
+12.0 uL ddH2O
+2.0 10x T4 DNA Ligase Buffer
+1.0 uL BsaI
+
+Recipe [TOTAL = 10uL]:
+6.5 uL Master Mix
+1 uL each remaining DNA
+0.5 uL T4 DNA ligase
+
+samples:
+label     dna                        enzyme    product   
+          pcrA36, pcrB36, pcrC36     BsaI      pLYC36    
+          pcrA37, pcrB37, pcrC37     BsaI      pLYC37    
+          pcrA, pcrB, pcrC           BsaI      pLYC38    
+          pcrA39, pcrB39, pcrC39     BsaI      pLYC39    
+          back1-40, back2-40, part-40BsaI      pLYC40    
+          back1, back2, part         BsaI      pLYC41    
+
+source:
+label            concentration    location         
+pcrB36                                             
+pcrA37                                             
+pcrC36                                             
+pcrB37                                             
+pcrA36                                             
+back2-40                                           
+back1-40                                           
+part                                               
+pcrC39                                             
+part-40                                            
+pcrC37                                             
+pcrA39                                             
+pcrB39                                             
+pcrC                                               
+pcrA                                               
+pcrB                                               
+back1                                              
+back2                                              
+
+destination: thermocycler__
+program: main/GG1
+
+Note:
+Never let enzymes warm up! Only take the enzyme cooler out of the freezer when you are actively using it, and only take the tubes out of it when actively dispensing
+Step 11 of 11: Lyc7 Transform
+
+samples:
+label          strain         antibiotic     product        incubate       
+               Mach1          Amp            pLYC36                        
+               Mach1          Amp            pLYC37                        
+               Mach1          Amp            pLYC38                        
+               Mach1          Amp            pLYC39                        
+               Mach1          Amp            pLYC40                        
+               Mach1          Amp            pLYC41                        
+
+source:
+label            concentration    location         
+pLYC41                            thermocylcer__   
+pLYC40                            thermocylcer__   
+pLYC39                            thermocylcer__   
+pLYC38                            thermocylcer__   
+pLYC37                            thermocylcer__   
+pLYC36                            thermocylcer__   
+
+rescue_required?: no
+END OF LAB SHEETS FOR EXPERIMENT Lyc7

@@ -1,0 +1,4 @@
+PCR G00101,TP3M on p20N64    (f3M)
+PCR PF4a,BR4a on pLYC25    (back1-4)PCR BF4a,PR4a on pLYC25    (back2-4)
+Assemble f3M,back1-4,back2-4        (BsaI, pLYC28M)
+Transform pLYC28M (Mach1, Amp)

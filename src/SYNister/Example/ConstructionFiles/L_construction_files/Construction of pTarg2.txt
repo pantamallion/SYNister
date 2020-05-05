@@ -1,0 +1,7 @@
+PCR targAf/targAr on p20N5	(1200 bp, pcrA)PCR targBf/targBr on pTargetF	(1172 bp, pcrB)Assemble pcrA,pcrB	(gibson, pTarg2)Transform pTarg2	(Mach1, Amp)
+----
+>targAf	Gibson construction of pTarg2	
+GAGTTCATGTGCAGCTCCATAAGCTGAAATTCTGCCTCGTGATAC>targAr	Gibson construction of pTarg2	
+GTTAAGGGATTTTGGTCATGAGATTATCAAAAAGGATCTTC>targBf	Gibson construction of pTarg2	
+GAAGATCCTTTTTGATAATCTCATGACCAAAATCCCTTAAC>targBr	Gibson construction of pTarg2
+GTATCACGAGGCAGAATTTCAGCTTATGGAGCTGCACATGAACTC

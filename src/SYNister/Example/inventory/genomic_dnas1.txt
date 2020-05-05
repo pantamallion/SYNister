@@ -1,0 +1,27 @@
+>name	genomic_dnas1								
+>description	Historical genomic dnas								
+>location	freezer								
+>plate_type	cardboard_box								
+>temperature	-20								
+									
+>>composition	A	B	C	D	E	F	G	H	I
+1	Bacillus globigii	Bacillus subtilis	P1 phage	Citrobacter	Vibrio fisherii	Deinococcus radiodurans	Vibrio parahaemolyticus	Arcanobacterium pyogenes	Clostridium perfringens
+2	Bacillus cereus	Streptococcius pyogenes	Shigella flexneri 2457T	Shigella flexneri 2457T	Streptococcus pneumonia	Yersinia pseudotuburculosis	Streptomyces anulatus ATCC 11523	Staphylococcus aureusÊ	CFT073
+3	MG1655	K1E phage	GHFu	pCVD462	RP4-4	RP4-4	BW20767	EV36	P. putida
+4	PY54	P1kc	SW102	E. coli K1 ATCC 11775	Pseudomonas aeruginosa	E. coli K1 ATCC 23503			
+5									
+6									
+7									
+8									
+9									
+									
+>>note	A	B	C	D	E	F	G	H	I
+1									
+2									
+3									
+4									
+5									
+6									
+7									
+8									
+9									
