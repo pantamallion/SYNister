@@ -12,8 +12,8 @@ Description
 Example inventory folder, input folders, and outputs can be seen in /src/SYNister/Example  
 ### Inputs
 #### Inventory
-explain
-![inv3](/READMEphotos/inventory.png)  
+The inventory consists of a folder of TSV files where each file is a box in the inventory. The TSV should contain 3 copies of the same grid. In the first copy, the label of the item in a slot is specified. In the second, the substance is specified. In the third, the concentration is specified.    
+![inv3](/READMEphotos/inventory.png)   
 Example of a valid inventory can be seen in /src/SYNister/Example/inventory
 #### Construction Files
 The construction file folder (the "Input" field) should be a folder containing only the .txt construction files which will be used to construct a single set of lab sheets. For example:  
@@ -40,8 +40,11 @@ For example:
     
 More examples of valid input folders and constrcution files can be seen in /src/SYNister/Example/ConstructionFiles  
 ### Outputs
-explain
-More examples of outputs can be seen in /src/SYNister/Example/Output
+SYNister will output a single .doc of labsheets to be completed in order for the given folder of construction files. Some values (mainly labels and some locations) will be left blank for the user to fill in. **All** prefilled fields should be double-checked, but the field of main concern are flagged with “[VERIFY].”  
+  
+Note: The inventory will *not* be updated automatically, and so should be manually editted.
+  
+Examples of outputs can be seen in /src/SYNister/Example/Output 
 ## Troubleshooting
 Error messages displayed under button  
 ![error](/READMEphotos/interface_error.png)  
