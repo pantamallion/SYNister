@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="SYNister:jar2">
-    <output-path>$PROJECT_DIR$/out/artifacts/SYNister_jar2</output-path>
-    <root id="archive" name="SYNister.jar">
-      <element id="module-output" name="SYNister" />
-    </root>
-  </artifact>
-</component>
