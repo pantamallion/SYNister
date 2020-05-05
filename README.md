@@ -2,7 +2,7 @@
 # SYNister: Labsheet Generator
 Description
 ## How to use
-![interface1](/READMEphotos/interface 2.png)  
+![interface1](/READMEphotos/interface.png)  
 steps to use
 ### Inputs
 #### Inventory
@@ -12,7 +12,7 @@ ConstructionFile formatting
 ### Outputs
 ## Troubleshooting
 Error messages displayed under button
-![error](/READMEphotos/interface_error 2.png)
+![error](/READMEphotos/interface_error.png)
 Else check contruction file
 ## Future plans
 ### ConstructionFileBuilder
