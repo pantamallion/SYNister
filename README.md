@@ -1,5 +1,7 @@
+![SYNister Logo](/src/SYNister/SYNister.png)
 # SYNister: Labsheet Generator
 ## How to use
+GUI Photo
 ### Inputs
 #### Inventory
 #### Construction Files
