@@ -14,19 +14,29 @@ Example inventory folder, input folders, and outputs can be seen in /src/SYNiste
 #### Inventory
 Folder of TSV files
 #### Construction Files
-ConstructionFile formatting   
-The following steps are supported:  
- * pcr _primer1_,_primer2_ on _template_		(_productLength_bp, _product_)
+The construction file folder (the "Input" field) should be a folder containing only the .txt construction files which will be used to construct a single set of lab sheets. For example:  
+![inputfolder](/READMEphotos/inputfolder.png)   
+   
+Each construction file should be formatted as a list of steps. Lines starting with ">" or "//" will be ignored (and thus can be used for comments). Any text below a broken line ("---") will be ignored, and thus can be used to specify oligos for human reference.  
+The following steps are supported with the given formats (replace bolded sections with specific items):  
+ * pcr *primer1*,*primer2* on *template*		(*productLength*bp, *product*)
    * All unique pcr products must have unique names
    * If template is genomic, should end in “-gen”
    * If product already exists in the inventory, SYNister will not repeat the pcr
- * assemble oligo1,oligo2,...				(enzyme, product)
-  * Assumes Golden Gate Assembly
-  * If Gibson Assembly “enzyme” = “gibson”
- * digest oligo with enzyme1/enzyme2/....	(product)
- * ligate digest							(product)
- * transform plasmid						(strain, antibiotic)
- * pca oligo1,oligo2,... 					(product)
+ * assemble *oligo1*,*oligo2*,*...*				(*enzyme*, *product*)
+   * Assumes Golden Gate Assembly
+   * If Gibson Assembly “enzyme” = “gibson”
+ * digest *oligo* with *enzyme1*/*enzyme2*/*...*	(*product*)
+ * ligate *digest*							(*product*)
+ * transform *plasmid*						(*strain*, *antibiotic*)
+ * pca *oligo1*,*oligo2*,*...* 					(*product*)  
+ Note: "acquire," "cleanup," and "gel" steps do not need to be specified and will be added where needed. If they are specified, they will be ignored.
+   
+ For example: 
+ ![input](/READMEphotos/input.png)  
+ 
+    
+ More examples of valid folder and constrcution files can be seen in /src/SYNister/Example/ConstructionFiles  
 ### Outputs
 ## Troubleshooting
 Error messages displayed under button  
@@ -34,5 +44,6 @@ Error messages displayed under button
 Else check contruction file  
 ## Future plans
 ### ConstructionFileBuilder
-insert location in ProcessConstructionFile where this connects
+![cfbuilders](/READMEphotos/ProcessConstructionFiles.png)   
+explain
 ### Drag and drop GUI
