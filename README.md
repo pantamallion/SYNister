@@ -1,4 +1,4 @@
-![SYNister Logo](~/Desktop/SYNister.png)
+![SYNister Logo](/READMEphotos/SYNister.png)
 # SYNister: Labsheet Generator
 DEscription
 ## How to use
