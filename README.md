@@ -11,7 +11,7 @@ ConstructionFile formatting
 ### Outputs
 ## Troubleshooting
 Error messages displayed under button
-![error](/READMEphotos/interface_error)
+![error](/READMEphotos/interface_error.png)
 Else check contruction file
 ## Future plans
 ### ConstructionFileBuilder
