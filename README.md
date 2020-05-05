@@ -13,11 +13,11 @@ Example inventory folder, input folders, and outputs can be seen in /src/SYNiste
 ### Inputs
 #### Inventory
 explain
-![inv](/READMEphotos/inventory.png)  
+![inv2](/READMEphotos/inventory.png)  
 Example of a valid inventory can be seen in /src/SYNister/Example/inventory
 #### Construction Files
 The construction file folder (the "Input" field) should be a folder containing only the .txt construction files which will be used to construct a single set of lab sheets. For example:  
-![inputfolder1](/READMEphotos/inputfolder.png)   
+![inputfolder2](/READMEphotos/inputfolder.png)   
    
 Each construction file should be formatted as a list of steps. Lines starting with ">" or "//" will be ignored (and thus can be used for comments). Any text below a broken line ("---") will be ignored, and thus can be used to specify oligos for human reference.  
 The following steps are supported with the given formats (replace bolded sections with specific items):  
@@ -35,7 +35,7 @@ The following steps are supported with the given formats (replace bolded section
 Note: "acquire," "cleanup," and "gel" steps do not need to be specified and will be added where needed. If they are specified, they will be ignored.    
    
 For example:   
-![input1](/READMEphotos/input.png)  
+![input2](/READMEphotos/input.png)  
  
     
 More examples of valid input folders and constrcution files can be seen in /src/SYNister/Example/ConstructionFiles  
