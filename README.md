@@ -62,3 +62,7 @@ Combine with ConstructionFileBuilder to go directly from list of specified oligo
 ![cfbuilders2](/READMEphotos/ProcessConstructionFiles.png)   
 ### Drag and drop GUI
 Typing (or even copying) entire filepaths can get tedious; a drag and drop functionality might improve user experience.
+### Formatting
+The current .doc output has limitted formatting. Consider finding a way to output bolding/italics/different font sizes to improve readability.
+### Adding Labels 
+Currently reaction labels are left blank (as this information cannot be extracted from the constructionfile). Consider prompting user to provide single-character to derive labels from. If this is done, one should keep in mind how these labels might conflict with the inventory and/or parallel projects.
