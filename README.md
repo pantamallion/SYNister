@@ -1,6 +1,6 @@
 ![SYNister Logo](/READMEphotos/SYNister.png)
 # SYNister: Labsheet Generator
-SYNister converts a set of construction files for various DNA products into a single series of wetlab steps, outputted as a set of labsheets
+SYNister converts a set of construction files for various DNA products into a single series of wetlab steps, outputted as a set of labsheets.
 ## How to use
 1. Download SYNister.jar file
 2. Click to run, the following window will appear:  
