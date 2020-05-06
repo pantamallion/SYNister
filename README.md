@@ -47,17 +47,18 @@ Note: The inventory will *not* be updated automatically, and so should be manual
   
 Examples of outputs can be seen in /src/SYNister/Example/Output 
 ## Troubleshooting
-Error messages are displayed under the button:   
+Error messages are displayed under the button. For example:     
 ![error](/READMEphotos/interface_error.png)  
-If error cannot be understood from error message, check inputs are in the specified formats above. 
-Potential things to keep in mind:
+If error cannot be understood from error message, check inputs are in the specified formats above.  
+
+Potential sources of error to keep in mind:
  * ensure steps are formatted as specified, with all necessary information
  * ensure all unique DNAs have unique labels   
 ## Future plans
 ### Exception handling/more intensive tests
-Currently run on a distinct set of unit tests and test inputs, which likely missed various possible scenarios. Greater testing would find these errors. To go along with that, not all errors need to be fatal, SYNister should ideally be able to give a bit more leeway to the formatting of the construction files (leaving blanks where non-crucial information is missing instaed of failing entirely).
+Currently run on a distinct set of unit tests and test inputs, which likely missed various possible scenarios. Greater testing would find these errors. To go along with that, not all errors need to be fatal: SYNister should ideally be able to give a bit more leeway to the formatting of the construction files (leaving blanks where non-crucial information is missing instead of failing entirely).
 ### ConstructionFileBuilder
-Combine with ConstructionFileBuilder to go directly from specfied list of oligos to labsheets. Currently SYNister takes .txt construction files as inputs. ConstructionFileBuilder can output these .txt files for SYNister read. Alternatively, SYNister reads .txt construction files into ConstructionFile models and immediately extracts a List of steps; ConstructionFileBuilder can connect its ConstructionFile model outputs directly to this part of the code (at /src/SYNister/model/ProcessConstructionFile.java line 116, pictured below).  
+Combine with ConstructionFileBuilder to go directly from list of specified oligos to labsheets. Currently SYNister takes .txt construction files as inputs. ConstructionFileBuilder can output these .txt files for SYNister read. Alternatively, as SYNister reads .txt construction files into ConstructionFile models and immediately extracts a List of steps, ConstructionFileBuilder can connect its ConstructionFile model outputs directly to this part of the code (at /src/SYNister/model/ProcessConstructionFile.java line 116, pictured below).  
 ![cfbuilders2](/READMEphotos/ProcessConstructionFiles.png)   
 ### Drag and drop GUI
 Typing (or even copying) entire filepaths can get tedious; a drag and drop functionality might improve user experience.
