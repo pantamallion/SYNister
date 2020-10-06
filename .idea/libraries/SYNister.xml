@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="SYNister">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SYNister.jar!/" />
+      <root url="file://$USER_HOME$/cs61b-software/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/cs61b-software/lib" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/cs61b-software/lib" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/cs61b-software/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>

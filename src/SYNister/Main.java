@@ -50,9 +50,9 @@ public class Main {
     public static void main(String[] args) throws Exception{
 
         //change these to desired
-        String inventory = "src/SYNister/Example/inventory";
-        String input = "src/SYNister/Example/ConstructionFiles/";
-        String output = "src/SYNister/Example/Output/";
+        String inventory = "Example/inventory";
+        String input = "Example/ConstructionFiles/";
+        String output = "Example/Output/";
         inventory = new File(inventory).toURI().toString().substring(5); //converts local file path to fill path
         input = new File(input).toURI().toString().substring(5); //converts local file path to fill path
         output = new File(output).toURI().toString().substring(5); //converts local file path to fill path

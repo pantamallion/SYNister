@@ -209,7 +209,7 @@ public class ParseConstructionFile {
     }
 
     public static void main(String[] args) throws Exception {
-        CRISPRExample();
+        //CRISPRExample();
         PCAExample();
     }
 
